@@ -1,0 +1,693 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Saizul Amin//bd-holidays//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bangladesh Government Holidays
+X-WR-TIMEZONE:Asia/Dhaka
+BEGIN:VEVENT
+UID:20270101-english-new-year-optional-christian@bd-holidays.saizul.github.
+ io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:English New Year
+DESCRIPTION:ইংরেজি নববর্ষ\nOptional holiday (christ
+ ian)
+CATEGORIES:optional,christian
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270106-shab-e-miraj-optional-muslim@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:Shab-e-Miraj
+DESCRIPTION:শব-ই-মিরাজ\nOptional holiday (muslim)\nDepends 
+ on the sighting of the moon\nTentative date
+CATEGORIES:optional,muslim
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270124-shab-e-barat-executive@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+SUMMARY:Shab-e-Barat
+DESCRIPTION:শব-ই-বরাত\nExecutive order holiday\nDepends on th
+ e sighting of the moon\nTentative date
+CATEGORIES:executive
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270210-ash-wednesday-optional-christian@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270210
+DTEND;VALUE=DATE:20270211
+SUMMARY:Ash Wednesday
+DESCRIPTION:ভস্ম বুধবার\nOptional holiday (christian)
+CATEGORIES:optional,christian
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270211-saraswati-puja-optional-hindu@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:Saraswati Puja
+DESCRIPTION:শ্রীশ্রী সরস্বতী পূজা\nOp
+ tional holiday (hindu)
+CATEGORIES:optional,hindu
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270220-maghi-purnima-optional-buddhist@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+SUMMARY:Maghi Purnima
+DESCRIPTION:মাঘী পূর্ণিমা\nOptional holiday (buddhi
+ st)\nDepends on the sighting of the moon\nTentative date
+CATEGORIES:optional,buddhist
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270221-shaheed-day-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:Shaheed Day and International Mother Language Day
+DESCRIPTION:শহিদ দিবস ও আন্তর্জাতিক
+  মাতৃভাষা দিবস\nGeneral holiday
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270305-jumatul-bida-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270305
+DTEND;VALUE=DATE:20270306
+SUMMARY:Jumatul Bida
+DESCRIPTION:জুমাতুল বিদা\nGeneral holiday
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270306-shivaratri-optional-hindu@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:Shivaratri Vrata
+DESCRIPTION:শ্রীশ্রী শিবরাত্রি ব্র
+ ত\nOptional holiday (hindu)
+CATEGORIES:optional,hindu
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270307-shab-e-qadr-executive@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270307
+DTEND;VALUE=DATE:20270308
+SUMMARY:Shab-e-Qadr
+DESCRIPTION:শব-ই-কদর\nExecutive order holiday\nDepends on the s
+ ighting of the moon\nTentative date
+CATEGORIES:executive
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270308-eid-ul-fitr-extended-executive@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270310
+SUMMARY:Eid-ul-Fitr holiday (2 days before and 2 days after Eid)
+DESCRIPTION:ঈদ-উল-ফিতর (ঈদের পূর্বের 
+ ০২ দিন ও পরের ০২ দিন)\nExecutive order holid
+ ay\n2 days\nDepends on the sighting of the moon\nTentative date
+CATEGORIES:executive
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270310-eid-ul-fitr-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270310
+DTEND;VALUE=DATE:20270311
+SUMMARY:Eid-ul-Fitr
+DESCRIPTION:ঈদ-উল-ফিতর\nGeneral holiday\nDepends on the sig
+ hting of the moon\nTentative date
+CATEGORIES:general
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270311-eid-ul-fitr-extended-executive@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270311
+DTEND;VALUE=DATE:20270313
+SUMMARY:Eid-ul-Fitr holiday (2 days before and 2 days after Eid)
+DESCRIPTION:ঈদ-উল-ফিতর (ঈদের পূর্বের 
+ ০২ দিন ও পরের ০২ দিন)\nExecutive order holid
+ ay\n2 days\nDepends on the sighting of the moon\nTentative date
+CATEGORIES:executive
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270313-eid-ul-fitr-third-day-optional-muslim@bd-holidays.saizul.githu
+ b.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:Eid-ul-Fitr (third day after Eid)
+DESCRIPTION:ঈদ-উল-ফিতর (ঈদের পরের তৃত
+ ীয় দিন)\nOptional holiday (muslim)\nDepends on the sighting o
+ f the moon\nTentative date
+CATEGORIES:optional,muslim
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270322-dol-jatra-optional-hindu@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270323
+SUMMARY:Dol Jatra
+DESCRIPTION:দোলযাত্রা\nOptional holiday (hindu)
+CATEGORIES:optional,hindu
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270325-maundy-thursday-optional-christian@bd-holidays.saizul.github.i
+ o
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270325
+DTEND;VALUE=DATE:20270326
+SUMMARY:Maundy Thursday
+DESCRIPTION:পুণ্য বৃহস্পতিবার\nOptional hol
+ iday (christian)
+CATEGORIES:optional,christian
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270326-independence-day-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Independence and National Day
+DESCRIPTION:স্বাধীনতা ও জাতীয় দিবস
+ \nGeneral holiday
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270326-good-friday-optional-christian@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Good Friday
+DESCRIPTION:পুণ্য শুক্রবার\nOptional holiday (chr
+ istian)
+CATEGORIES:optional,christian
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270327-holy-saturday-optional-christian@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270328
+SUMMARY:Holy Saturday
+DESCRIPTION:পুণ্য শনিবার\nOptional holiday (christian
+ )
+CATEGORIES:optional,christian
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270328-easter-sunday-optional-christian@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+SUMMARY:Easter Sunday
+DESCRIPTION:ইস্টার সানডে\nOptional holiday (christian
+ )
+CATEGORIES:optional,christian
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270404-harichand-thakur-optional-hindu@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270404
+DTEND;VALUE=DATE:20270405
+SUMMARY:Birth anniversary of Sri Sri Harichand Thakur
+DESCRIPTION:শ্রীশ্রী হরিচাঁদ ঠাকুর
+ ের আবির্ভাব\nOptional holiday (hindu)
+CATEGORIES:optional,hindu
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270412-baisabi-optional-ethnic-minority@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270412
+DTEND;VALUE=DATE:20270413
+SUMMARY:Baisabi and similar social festivals of other small ethnic groups o
+ f the Chittagong Hill Tracts
+DESCRIPTION:বৈসাবি ও পার্বত্য চট্টগ
+ ্রামের অন্যান্য ক্ষুদ্র নৃ-
+ গোষ্ঠীর অনুরূপ সামাজিক উৎস
+ ব\nOptional holiday (ethnic-minority)
+CATEGORIES:optional,ethnic-minority
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270413-chaitra-sankranti-cht-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270414
+SUMMARY:Chaitra Sankranti (Rangamati\, Khagrachhari and Bandarban hill dist
+ ricts only)
+DESCRIPTION:চৈত্র সংক্রান্তি (শুধু 
+ রাঙ্গামাটি\, খাগড়াছড়ি ও বা
+ ন্দরবান পার্বত্য জেলার জন্
+ য প্রযোজ্য)\nGeneral holiday\nOnly in: Rangamati\, Khagr
+ achhari\, Bandarban
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270413-chaitra-sankranti-optional-buddhist@bd-holidays.saizul.github.
+ io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270414
+SUMMARY:Chaitra Sankranti
+DESCRIPTION:চৈত্র সংক্রান্তি\nOptional holida
+ y (buddhist)
+CATEGORIES:optional,buddhist
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270414-pohela-boishakh-executive@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:Bengali New Year (Pohela Boishakh)
+DESCRIPTION:নববর্ষ\nExecutive order holiday
+CATEGORIES:executive
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270415-baisabi-optional-ethnic-minority@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:Baisabi and similar social festivals of other small ethnic groups o
+ f the Chittagong Hill Tracts
+DESCRIPTION:বৈসাবি ও পার্বত্য চট্টগ
+ ্রামের অন্যান্য ক্ষুদ্র নৃ-
+ গোষ্ঠীর অনুরূপ সামাজিক উৎস
+ ব\nOptional holiday (ethnic-minority)
+CATEGORIES:optional,ethnic-minority
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270501-may-day-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:May Day
+DESCRIPTION:মে দিবস\nGeneral holiday
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270515-eid-ul-azha-extended-executive@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270517
+SUMMARY:Eid-ul-Azha holiday (2 days before and 3 days after Eid)
+DESCRIPTION:ঈদ-উল-আজহা (ঈদের পূর্বের 
+ ০২ দিন ও পরের ০৩ দিন)\nExecutive order holid
+ ay\n2 days\nDepends on the sighting of the moon\nTentative date
+CATEGORIES:executive
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270517-eid-ul-azha-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270518
+SUMMARY:Eid-ul-Azha
+DESCRIPTION:ঈদ-উল-আজহা\nGeneral holiday\nDepends on the sig
+ hting of the moon\nTentative date
+CATEGORIES:general
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270518-eid-ul-azha-extended-executive@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270521
+SUMMARY:Eid-ul-Azha holiday (2 days before and 3 days after Eid)
+DESCRIPTION:ঈদ-উল-আজহা (ঈদের পূর্বের 
+ ০২ দিন ও পরের ০৩ দিন)\nExecutive order holid
+ ay\n3 days\nDepends on the sighting of the moon\nTentative date
+CATEGORIES:executive
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270519-buddha-purnima-adjacent-optional-buddhist@bd-holidays.saizul.g
+ ithub.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+SUMMARY:Buddha Purnima (day before and day after)
+DESCRIPTION:বুদ্ধ পূর্ণিমা (পূর্বের
+  ও পরের দিন)\nOptional holiday (buddhist)
+CATEGORIES:optional,buddhist
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270520-buddha-purnima-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+SUMMARY:Buddha Purnima (Baishakhi Purnima)
+DESCRIPTION:বুদ্ধ পূর্ণিমা (বৈশাখী 
+ পূর্ণিমা)\nGeneral holiday\nDepends on the sighting of the
+  moon\nTentative date
+CATEGORIES:general
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270521-buddha-purnima-adjacent-optional-buddhist@bd-holidays.saizul.g
+ ithub.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:Buddha Purnima (day before and day after)
+DESCRIPTION:বুদ্ধ পূর্ণিমা (পূর্বের
+  ও পরের দিন)\nOptional holiday (buddhist)
+CATEGORIES:optional,buddhist
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270521-eid-ul-azha-fourth-day-optional-muslim@bd-holidays.saizul.gith
+ ub.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:Eid-ul-Azha (fourth day after Eid)
+DESCRIPTION:ঈদ-উল-আজহা (ঈদের পরের চতু
+ র্থ দিন)\nOptional holiday (muslim)\nDepends on the sighting o
+ f the moon\nTentative date
+CATEGORIES:optional,muslim
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270616-ashura-executive@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270616
+DTEND;VALUE=DATE:20270617
+SUMMARY:Ashura
+DESCRIPTION:আশুরা\nExecutive order holiday\nDepends on the sighti
+ ng of the moon\nTentative date
+CATEGORIES:executive
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270718-ashari-purnima-optional-buddhist@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270718
+DTEND;VALUE=DATE:20270719
+SUMMARY:Ashari Purnima
+DESCRIPTION:আষাঢ়ী পূর্ণিমা\nOptional holiday (
+ buddhist)\nDepends on the sighting of the moon\nTentative date
+CATEGORIES:optional,buddhist
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270728-akheri-chahar-shomba-optional-muslim@bd-holidays.saizul.github
+ .io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270728
+DTEND;VALUE=DATE:20270729
+SUMMARY:Akheri Chahar Shomba
+DESCRIPTION:আখেরি চাহার সোম্বা\nOptional ho
+ liday (muslim)\nDepends on the sighting of the moon\nTentative date
+CATEGORIES:optional,muslim
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270805-july-uprising-day-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270805
+DTEND;VALUE=DATE:20270806
+SUMMARY:July Mass Uprising Day
+DESCRIPTION:জুলাই গণঅভ্যুত্থান দিব
+ স\nGeneral holiday
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270815-eid-e-milad-un-nabi-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+SUMMARY:Eid-e-Milad-un-Nabi (SAW)
+DESCRIPTION:ঈদ-ই-মিলাদুন্নবী (সা.)\nGeneral
+  holiday\nDepends on the sighting of the moon\nTentative date
+CATEGORIES:general
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270825-janmashtami-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270825
+DTEND;VALUE=DATE:20270826
+SUMMARY:Janmashtami
+DESCRIPTION:জন্মাষ্টমী\nGeneral holiday
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270913-fateha-e-yazdaham-optional-muslim@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270913
+DTEND;VALUE=DATE:20270914
+SUMMARY:Fateha-e-Yazdaham
+DESCRIPTION:ফাতেহা-ই-ইয়াজদাহম\nOptional ho
+ liday (muslim)\nDepends on the sighting of the moon\nTentative date
+CATEGORIES:optional,muslim
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270915-madhu-purnima-optional-buddhist@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270915
+DTEND;VALUE=DATE:20270916
+SUMMARY:Madhu Purnima (Bhadra Purnima)
+DESCRIPTION:মধু পূর্ণিমা (ভাদ্র পূর
+ ্ণিমা)\nOptional holiday (buddhist)\nDepends on the sighting of 
+ the moon\nTentative date
+CATEGORIES:optional,buddhist
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20270930-mahalaya-optional-hindu@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271001
+SUMMARY:Mahalaya
+DESCRIPTION:মহালয়া\nOptional holiday (hindu)
+CATEGORIES:optional,hindu
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271007-durga-puja-saptami-ashtami-optional-hindu@bd-holidays.saizul.g
+ ithub.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271007
+DTEND;VALUE=DATE:20271009
+SUMMARY:Durga Puja (Saptami and Ashtami)
+DESCRIPTION:শ্রীশ্রী দুর্গাপূজা (সপ
+ ্তমী ও অষ্টমী)\nOptional holiday (hindu)\n2 days
+CATEGORIES:optional,hindu
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271009-durga-puja-nabami-executive@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271009
+DTEND;VALUE=DATE:20271010
+SUMMARY:Durga Puja (Nabami)
+DESCRIPTION:দুর্গাপূজা (নবমী)\nExecutive order 
+ holiday
+CATEGORIES:executive
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271010-durga-puja-dashami-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271010
+DTEND;VALUE=DATE:20271011
+SUMMARY:Durga Puja (Bijoya Dashami)
+DESCRIPTION:দুর্গাপূজা (বিজয়া দশমী
+ )\nGeneral holiday
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271014-probarona-purnima-optional-buddhist@bd-holidays.saizul.github.
+ io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271014
+DTEND;VALUE=DATE:20271015
+SUMMARY:Probarona Purnima (Ashwini Purnima)
+DESCRIPTION:প্রবারণা পূর্ণিমা (আশ্ব
+ িনী পূর্ণিমা)\nOptional holiday (buddhist)\nDepends 
+ on the sighting of the moon\nTentative date
+CATEGORIES:optional,buddhist
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271014-lakshmi-puja-optional-hindu@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271014
+DTEND;VALUE=DATE:20271015
+SUMMARY:Lakshmi Puja
+DESCRIPTION:শ্রীশ্রী লক্ষ্মী পূজা\nOp
+ tional holiday (hindu)
+CATEGORIES:optional,hindu
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271028-shyama-puja-optional-hindu@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271029
+SUMMARY:Shyama Puja
+DESCRIPTION:শ্রীশ্রী শ্যামা পূজা\nOptio
+ nal holiday (hindu)
+CATEGORIES:optional,hindu
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271107-national-revolution-day-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271107
+DTEND;VALUE=DATE:20271108
+SUMMARY:National Revolution and Solidarity Day
+DESCRIPTION:জাতীয় বিপ্লব ও সংহতি দ
+ িবস\nGeneral holiday
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271216-victory-day-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271216
+DTEND;VALUE=DATE:20271217
+SUMMARY:Victory Day
+DESCRIPTION:বিজয় দিবস\nGeneral holiday
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271224-christmas-festival-optional-christian@bd-holidays.saizul.githu
+ b.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271224
+DTEND;VALUE=DATE:20271225
+SUMMARY:Christmas festival (day before and day after Christmas)
+DESCRIPTION:যিশুখ্রিষ্টের জন্মোৎস
+ ব (বড়দিনের পূর্বের ও পরের দ
+ িন)\nOptional holiday (christian)
+CATEGORIES:optional,christian
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271225-christmas-general@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+SUMMARY:Christmas Day
+DESCRIPTION:যিশুখ্রিষ্টের জন্মদিন (
+ বড়দিন)\nGeneral holiday
+CATEGORIES:general
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271226-christmas-festival-optional-christian@bd-holidays.saizul.githu
+ b.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+SUMMARY:Christmas festival (day before and day after Christmas)
+DESCRIPTION:যিশুখ্রিষ্টের জন্মোৎস
+ ব (বড়দিনের পূর্বের ও পরের দ
+ িন)\nOptional holiday (christian)
+CATEGORIES:optional,christian
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20271226-shab-e-miraj-optional-muslim@bd-holidays.saizul.github.io
+DTSTAMP:20261115T041832Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+SUMMARY:Shab-e-Miraj
+DESCRIPTION:শব-ই-মিরাজ\nOptional holiday (muslim)\nDepends 
+ on the sighting of the moon\nTentative date
+CATEGORIES:optional,muslim
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

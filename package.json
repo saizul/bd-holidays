@@ -1,0 +1,68 @@
+{
+  "name": "bd-holidays",
+  "version": "0.1.0",
+  "description": "Bangladesh government holidays (2025-2027, from the official Ministry of Public Administration notices) and business-day maths: general, executive-order and optional holidays in Bangla and English, plus a CLI with iCal, JSON and CSV export.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Saizul Amin",
+  "homepage": "https://github.com/saizul/bd-holidays#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saizul/bd-holidays.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saizul/bd-holidays/issues"
+  },
+  "keywords": [
+    "bangladesh",
+    "holidays",
+    "public-holidays",
+    "business-days",
+    "working-days",
+    "calendar",
+    "ical",
+    "bangla"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/src/index.d.ts",
+        "default": "./dist/src/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "bd-holidays": "dist/src/bin.js"
+  },
+  "files": [
+    "dist/src",
+    "dist/cjs",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json && node scripts/write-cjs-package.mjs",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "pretest": "npm run build",
+    "test": "node --test dist/test/*.test.js",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
