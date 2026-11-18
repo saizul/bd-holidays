@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Added
+
+- `findBreaks(from, to, options)`: long weekends and holiday breaks of at least `minDays`
+  consecutive days off, for leave planning. With `maxLeave`, runs of days off separated by up to
+  that many working days are joined and the working days are listed as `leaveDays`. Accepts every
+  `BusinessCalendar` option, reports breaks that cross the range edges whole and stops cleanly at
+  the end of the bundled data.
+- `bd-holidays breaks [year|from..to] [--min-days N] [--max-leave N]` with table (English or
+  Bangla names) and JSON output.
+- Contributor community files: `CODE_OF_CONDUCT.md`, issue templates and a pull request
+  template.
+
 ## [0.1.0] - 2026-11-15
 
 ### Added

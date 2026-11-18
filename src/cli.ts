@@ -1,5 +1,6 @@
+import { findBreaks, type Break } from './breaks.js';
 import { BusinessCalendar } from './calendar.js';
-import { todayInDhaka, toISODate, yearOf } from './date.js';
+import { todayInDhaka, toISODate, weekdayName, yearOf } from './date.js';
 import {
   ALL_TYPES,
   getHolidays,
@@ -34,6 +35,7 @@ Usage:
   bd-holidays add <date> <days> [calendar options]
   bd-holidays between <from> <to> [calendar options]
   bd-holidays business-days <year> <month> [calendar options]
+  bd-holidays breaks [year|from..to] [--min-days N] [--max-leave N] [calendar options]
   bd-holidays sources [year]
   bd-holidays years
 
@@ -49,6 +51,10 @@ Calendar options:
   --extra DATES         extra non-working dates, comma separated
   --working DATES       dates that are working days anyway, comma separated
   --unknown-year MODE   throw (default) or weekends-only
+
+Breaks:
+  --min-days N          shortest break to list, leave included (default 3)
+  --max-leave N         working days of leave that may join days off (default 0)
 
 Output:
   --lang en|bn          names in English (default) or Bangla
@@ -194,6 +200,47 @@ function emit(content: string, args: ParsedArgs, io: CliIO): void {
   } else io.stdout(content);
 }
 
+function intFlag(args: ParsedArgs, name: string, fallback: number, min: number): number {
+  const raw = stringFlag(args, name);
+  if (raw === undefined) return fallback;
+  const n = Number(raw);
+  if (!/^\d+$/.test(raw) || n < min) throw new UsageError(`--${name} must be a whole number of at least ${min}`);
+  return n;
+}
+
+function rangeForSpec(spec: string): [string, string] {
+  const range = /^(\d{4}-\d{2}-\d{2})\.\.(\d{4}-\d{2}-\d{2})$/.exec(spec);
+  if (range) return [range[1]!, range[2]!];
+  const year = parseYear(spec, 0);
+  return [`${year}-01-01`, `${year}-12-31`];
+}
+
+function short(iso: string): string {
+  return `${iso} ${weekdayName(iso)}`;
+}
+
+/** Text table of breaks: dates, length, leave needed and the holidays inside. */
+export function renderBreaks(breaks: readonly Break[], lang: 'en' | 'bn'): string {
+  if (breaks.length === 0) return 'No breaks match.\n';
+  const rows = breaks.map((b) => {
+    const names = [...new Set(b.holidays.map((h) => (lang === 'bn' ? h.nameBn : h.name) + (h.tentative ? ' *' : '')))];
+    return [
+      short(b.start),
+      short(b.end),
+      String(b.days),
+      b.leaveDays.length ? b.leaveDays.join(', ') : '-',
+      names.join('; ') || 'weekend',
+    ];
+  });
+  const header = ['From', 'To', 'Days', 'Leave', 'Holidays'];
+  const widths = header.map((hd, i) => Math.max(hd.length, ...rows.map((r) => [...r[i]!].length)));
+  const fmt = (r: string[]) =>
+    r.map((c, i) => (i === r.length - 1 ? c : c + ' '.repeat(widths[i]! - [...c].length))).join('  ');
+  const lines = [fmt(header), widths.map((w) => '-'.repeat(w)).join('  '), ...rows.map(fmt)];
+  if (breaks.some((b) => b.holidays.some((h) => h.tentative))) lines.push('', '* tentative: depends on the sighting of the moon');
+  return lines.join('\n') + '\n';
+}
+
 function holidaysForSpec(spec: string, filter: HolidayFilter, today: string): Holiday[] {
   const range = /^(\d{4}-\d{2}-\d{2})\.\.(\d{4}-\d{2}-\d{2})$/.exec(spec);
   if (range) return getHolidaysBetween(range[1]!, range[2]!, filter);
@@ -287,6 +334,21 @@ export function runCli(argv: readonly string[], io: CliIO): number {
         const days = new BusinessCalendar(calendarFrom(args)).businessDaysInMonth(parseYear(rest[0], 0), Number(rest[1]));
         if (stringFlag(args, 'format') === 'json') io.stdout(JSON.stringify(days) + '\n');
         else io.stdout(`${days.length} business days\n${days.join('\n')}\n`);
+        return 0;
+      }
+      case 'breaks': {
+        const [from, to] = rangeForSpec(rest[0] ?? String(yearOf(today)));
+        const breaks = findBreaks(from, to, {
+          ...calendarFrom(args),
+          minDays: intFlag(args, 'min-days', 3, 1),
+          maxLeave: intFlag(args, 'max-leave', 0, 0),
+        });
+        const format = stringFlag(args, 'format') ?? 'table';
+        const lang = stringFlag(args, 'lang') ?? 'en';
+        if (lang !== 'en' && lang !== 'bn') throw new UsageError('--lang must be en or bn');
+        if (format === 'json') emit(JSON.stringify(breaks, null, 2) + '\n', args, io);
+        else if (format === 'table') emit(renderBreaks(breaks, lang), args, io);
+        else throw new UsageError(`Unknown format "${format}" for breaks (use table or json)`);
         return 0;
       }
       case 'sources': {
