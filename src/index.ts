@@ -52,6 +52,8 @@ export {
   type RollConvention,
 } from './calendar.js';
 
+export { findBreaks, type Break, type BreakOptions } from './breaks.js';
+
 export { addDays, isValidISODate, toISODate, todayInDhaka, weekdayName } from './date.js';
 export { HILL_DISTRICTS } from './data/names.js';
 export { toICS, type IcsOptions } from './export/ics.js';

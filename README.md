@@ -35,7 +35,9 @@ addBusinessDays('2027-03-04', 1);      // '2027-03-14': skips Eid-ul-Fitr 2027 a
 - **Business days**: Friday and Saturday weekend by default (government offices), configurable
   for private firms, with extra closures, declared working days and roll conventions.
 - **Exports**: iCalendar (`.ics`), CSV (Excel-friendly with `--bom`) and JSON.
-- **CLI**: list, check, next, add, between, business-days, export, sources.
+- **Long breaks and leave planning**: find long weekends and holiday breaks, and where one or two
+  days of leave join them into a longer break.
+- **CLI**: list, check, next, add, between, business-days, breaks, export, sources.
 - **Zero runtime dependencies**, ESM and CommonJS builds, full TypeScript types.
 
 ## Install
@@ -170,6 +172,25 @@ shop.roll('2027-04-30', 'modified-following'); // '2027-04-29'
 
 Roll conventions: `following`, `preceding`, `modified-following`, `modified-preceding`.
 
+### Long breaks and leave planning
+
+```js
+import { findBreaks } from 'bd-holidays';
+
+findBreaks('2026-01-01', '2026-12-31', { minDays: 5 });
+// [{ start: '2026-03-19', end: '2026-03-23', days: 5, leaveDays: [], holidays: [...] },   Eid-ul-Fitr
+//  { start: '2026-05-26', end: '2026-05-31', days: 6, leaveDays: [], holidays: [...] }]   Eid-ul-Azha
+
+findBreaks('2026-12-01', '2026-12-31', { maxLeave: 1 });
+// [{ start: '2026-12-16', end: '2026-12-19', days: 4, leaveDays: ['2026-12-17'], ... }]  Victory Day + 1 day leave
+```
+
+A break is a run of consecutive days off (weekly holidays, holidays, `extraHolidays`) of at least
+`minDays` (default 3). With `maxLeave` (default 0), runs separated by at most that many working
+days are joined and the working days in between are listed in `leaveDays`. Every
+`BusinessCalendar` option applies, so a shop with only Friday off gets its own answer. Breaks that
+overlap the range are returned whole, natural breaks first when two start on the same day.
+
 ### Sources
 
 ```js
@@ -213,6 +234,7 @@ bd-holidays next [date] [filters]
 bd-holidays add <date> <days> [calendar options]
 bd-holidays between <from> <to> [calendar options]
 bd-holidays business-days <year> <month> [calendar options]
+bd-holidays breaks [year|from..to] [--min-days N] [--max-leave N] [calendar options]
 bd-holidays sources [year]
 bd-holidays years
 ```
@@ -228,6 +250,8 @@ bd-holidays years
 | `--extra DATES` | extra closures, comma separated |
 | `--working DATES` | declared working days, comma separated |
 | `--unknown-year MODE` | `throw` (default) or `weekends-only` |
+| `--min-days N` | `breaks`: shortest break to list, leave included (default 3) |
+| `--max-leave N` | `breaks`: working days of leave that may join days off (default 0) |
 | `--lang en\|bn` | English or Bangla names |
 | `--format FORMAT` | `table`, `json`, `csv` or `ics` |
 | `--out FILE` | write to a file |
@@ -243,6 +267,7 @@ bd-holidays export 2026-12-01..2027-01-31 --format csv --bom --out holidays.csv
 bd-holidays check 2027-05-20          # exit code 0 = business day, 3 = not
 bd-holidays add 2026-12-14 10 --weekend fri
 bd-holidays between 2026-03-01 2026-03-31
+bd-holidays breaks 2026 --max-leave 1     # long weekends, and where one day of leave helps
 bd-holidays sources
 ```
 
